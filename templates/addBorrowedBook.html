@@ -1,0 +1,40 @@
+{% extends "style.html" %}
+{% block content %}
+<body>
+    <div class="head d-flex justify-content-between"> 
+        <div class="topleft">
+            <h1>Add Book</h1>
+        </div>
+        <div class="topright">
+            <h1>Back to library</h1>
+        </div>
+    </div>
+    <div class="container">
+        <form action="addBook.html">
+
+          <label for="jname">Book Name</label>
+          <input type="text" id="jname" name="Book Name" placeholder="..">
+      
+          <label for="pname">Name</label>
+          <input type="text" name="example" list="exampleList">
+            <datalist id="exampleList">
+                <option value="A">  
+                <option value="B">
+            </datalist>
+
+          <label for="ttname">Date Borrow</label>
+          <input type="text" id="ttname" name="Date Borrow" placeholder="..">
+
+          <label for="pname">Date Returned</label>
+          <input type="text" id="pname" name="Date Returned" placeholder="..">
+      
+          <input type="submit" value="Done" class="d-flex justify-content-center">
+      
+        </form>
+      </div>
+</body>
+
+
+<link rel="stylesheet" type="text/css" href="{{ url_for('static', filename='CSS/addBook.css') }}">
+<link rel="stylesheet" type="text/css" href="{{ url_for('static', filename='') }}">
+{% endblock %}

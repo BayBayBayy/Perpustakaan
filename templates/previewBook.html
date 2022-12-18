@@ -1,0 +1,54 @@
+{% extends "style.html" %}
+{% block content %}
+<body>
+    <div class="head d-flex justify-content-between"> 
+        <div class="topleft">
+            <h1>Preview Book</h1>
+        </div>
+        <div class="topright">
+            <h1>Back to library</h1>
+        </div>
+    </div>
+    <div class="middleContent d-flex justify-content-center">
+        <div class="gambar">
+            <img src="https://www.tutorialspoint.com/javafx/images/javafx-mini-logo.jpg">
+        </div>
+        <div class="contenBuku  d-flex justify-content-center">
+            <div class="isian">
+                <h2>Nama Buku    :</h2>
+                <h5>publication date :</h5>
+                <h5>publisher :</h5>
+                <h5>author  :</h5>
+                <h5>availibilty  :</h5>
+                <h5>Borrower  :</h5>
+                <h5>Date Borrower  :</h5>
+                <h5>Date Needed to be returned  :</h5>
+            </div>
+            <div class="dataIsian">
+                <h2>Narnia</h2>
+                <h5>2022</h5>
+                <h5>bambang</h5>
+                <h5>juno</h5>
+                <h5>yes</h5>
+                <h5>kris</h5>
+                <h5>12-06-2004</h5>
+                <h5>1-01-2005</h5>
+            </div>
+        </div>
+    </div>
+    <div class="bottomContent">
+        <h5>Sinopsis :</h5>
+        <h6> The idea for this sample app is simple: There 
+            will be a table view with a list of names for your very own “hit list”. You
+            be able to add names to this list, and eventually, use Core Data to make sure
+            the data is stored between sessions. We dont
+            condone violence on this site, so you can think of this app as a favorites
+            list to keep track of your friends too, of course!
+        </h6>
+    </div>
+</body>
+</html>
+
+<link rel="stylesheet" type="text/css" href="{{ url_for('static', filename='CSS/previewBook.css') }}">
+<link rel="stylesheet" type="text/css" href="{{ url_for('static', filename='') }}">
+{% endblock %}
