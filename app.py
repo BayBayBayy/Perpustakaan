@@ -25,7 +25,7 @@ def login():
 
 @app.route('/homeGuest')
 def homeGuest():
-    return rt("addBorrower.html")
+    return rt("profile.html")
 
 if __name__ == "__main__":
   app.run(debug=True)
