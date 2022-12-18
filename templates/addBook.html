@@ -1,0 +1,41 @@
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <div class="head"> 
+        <h1>Add Book</h1>
+        <h1>Back to library</h1>
+    </div>
+    <div class="container">
+        <form action="addBook.html">
+      
+          <label for="jname">Judul</label>
+          <input type="text" id="jname" name="judul" placeholder="..">
+      
+          <label for="pname">penulis</label>
+          <input type="text" id="pname" name="penulis" placeholder="..">
+
+          <label for="ttname">Tahun Terbit</label>
+          <input type="text" id="ttname" name="tahunTerbit" placeholder="..">
+
+          <label for="pname">Etalase</label>
+          <input type="text" id="pname" name="etalase" placeholder="..">
+
+          <label for="sinopsus">Sinopsis</label>
+          <textarea id="sinopsus" name="sinopsus" placeholder="Write something.." style="height:200px"></textarea>
+
+          <label for="gambar">Gambar</label>
+          <input type="text" id="gambar" name="gambar" placeholder="..">
+      
+          <input type="submit" value="Submit">
+      
+        </form>
+      </div>
+</body>
+</html>
+
+<link rel="stylesheet" type="text/css" href="{{ url_for('static', filename='CSS/addBook.css') }}">
